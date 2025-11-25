@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/pwbo-ti3a'; /* ganti jadi http://localho
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
