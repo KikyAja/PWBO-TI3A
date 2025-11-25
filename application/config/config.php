@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/pwbo-ti3a';
+$config['base_url'] = 'http://localhost/pwbo-ti3a'; /* ganti jadi http://localhost/pwbo-ti3a untuk julfandi  dan http://ci3-pwbo.local/ untuk Kiki*/
 
 /*
 |--------------------------------------------------------------------------
