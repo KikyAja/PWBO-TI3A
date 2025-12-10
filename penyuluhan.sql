@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 25, 2025 at 11:27 AM
+-- Generation Time: Dec 10, 2025 at 03:53 PM
 -- Server version: 8.0.44-0ubuntu0.24.04.1
 -- PHP Version: 8.3.28
 
@@ -68,6 +68,13 @@ CREATE TABLE `ortu` (
   `alamat` varchar(200) NOT NULL,
   `create_at` timestamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `ortu`
+--
+
+INSERT INTO `ortu` (`id_ortu`, `name_ibu`, `name_ayah`, `hubungan`, `telp`, `alamat`, `create_at`) VALUES
+(1, 'Mamak', 'Bapak', 'Sehat', 71, 'jalan bahagia Nomor 1945', '2025-12-10 08:16:36');
 
 -- --------------------------------------------------------
 
@@ -160,7 +167,7 @@ ALTER TABLE `kunjungan`
 -- AUTO_INCREMENT for table `ortu`
 --
 ALTER TABLE `ortu`
-  MODIFY `id_ortu` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ortu` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `pengukuran`
