@@ -10,7 +10,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
+              <li class="breadcrumb-item active">Orang Tua</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -25,6 +25,10 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
+                <h5 class="card-title"></h5>
+                  <?php if ($this->session->flashdata('message')) : ?>
+                    <?= $this->session->flashdata('message') ?>
+                  <?php endif ?>
                 <a href="<?= base_url('ortu/tambah') ?>" class="btn btn-labeled btn-primary" >
                     <span class="btn-label">
                         <i class="fa fa-plus" ></i>
@@ -54,9 +58,9 @@
                         <td><?= $ortu['telp'] ?></td>
                         <td><?= $ortu['alamat'] ?></td>
                         <td>
-                            <a href="<?= base_url('ortu/ubah') ?><?= $ortu['id_ortu'];?>"><span class="badge bg-success">Ubah</span>
+                            <a href="<?= base_url('ortu/ubah') ?>/<?= $ortu['id_ortu'];?>"><span class="badge bg-success">Ubah</span>
                             </a>
-                            <a href="<?= base_url('ortu/hapus') ?><?= $ortu['id_ortu'];?>"><span class="badge bg-danger">Hapus</span>
+                            <a href="<?= base_url('ortu/hapus') ?>/<?= $ortu['id_ortu'];?>"><span class="badge bg-danger">Hapus</span>
                             </a>
                         </td>
                         </tr>
